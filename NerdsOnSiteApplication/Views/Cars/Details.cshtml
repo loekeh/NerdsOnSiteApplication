@@ -1,0 +1,58 @@
+﻿@model NerdsOnSiteApplication.Models.Car
+
+
+<div row>
+    <div class="col-3-offser-3">
+        <h2>Detail Of Cars</h2>
+    </div>
+</div>
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CarManufacturer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarManufacturer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarMake)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarMake)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PassengerSeating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PassengerSeating)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CarId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
